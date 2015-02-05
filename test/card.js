@@ -34,6 +34,14 @@ describe('card', function () {
       expect(card.type('123')).to.be.undefined;
     });
 
+    it('returns the card name with minimal digits', function() {
+      expect(card.type('4')).to.equal('Visa');
+      expect(card.type('5')).to.equal('MasterCard');
+      expect(card.type('37')).to.equal('American Express');
+      expect(card.type('6')).to.equal('Discover');
+      expect(card.type('304')).to.equal('Diners Club');
+      expect(card.type('2131')).to.equal('JCB');
+    })
   });
 
   describe('#luhn', function () {
