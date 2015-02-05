@@ -86,6 +86,7 @@ describe('card', function () {
       expect(card.formattedParse('424242')).to.equal('4242 42');
       expect(card.formattedParse('378282246310005')).to.equal('3782 822463 10005');
       expect(card.formattedParse('37828224')).to.equal('3782 8224');
+      expect(card.formattedParse('3')).to.equal('3');
     });
   })
 

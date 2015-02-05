@@ -75,6 +75,8 @@ exports.formattedParse = function(number) {
       return parsed.replace(type.format, formatNumber);
     }
   }
+
+  return parsed;
 };
 
 exports.type = function (number) {
