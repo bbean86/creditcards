@@ -1,9 +1,10 @@
 {
   "name": "creditcards",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "homepage": "https://github.com/bendrucker/creditcards",
   "authors": [
-    "Ben Drucker <bvdrucker@gmail.com>"
+    "Ben Drucker <bvdrucker@gmail.com>",
+    "Ben Bean <bbean86@gmail.com>"
   ],
   "description": "Utility methods for formatting and validating credit cards",
   "main": "./release/creditcards.js",
