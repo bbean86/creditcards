@@ -80,4 +80,13 @@ describe('card', function () {
 
   });
 
+  describe('#formattedParse', function() {
+    it('adds the appropriate spaces to the number', function() {
+      expect(card.formattedParse('4242424242424242')).to.equal('4242 4242 4242 4242');
+      expect(card.formattedParse('424242')).to.equal('4242 42');
+      expect(card.formattedParse('378282246310005')).to.equal('3782 822463 10005');
+      expect(card.formattedParse('37828224')).to.equal('3782 8224');
+    });
+  })
+
 });
